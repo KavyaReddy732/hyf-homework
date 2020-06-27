@@ -165,12 +165,11 @@ iframe{
         margin:0;
         padding:0;
         width:100% ;
-    }
-    .flexitem{
-        display: block;
         height: auto;
-        width: 100;
-        margin: 0;
+    }
+    .GALLERY{
+        display: block;
+        margin-top: 20px;
     }
     .info{
         margin-top: 10px;
