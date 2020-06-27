@@ -160,10 +160,17 @@ iframe{
         height: 50%;
     }
     main{
-        display: block;
+        display: flex;
+        flex-flow: column-reverse;
         margin:0;
         padding:0;
         width:100% ;
+    }
+    .flexitem{
+        display: block;
+        height: auto;
+        width: 100;
+        margin: 0;
     }
     .info{
         margin-top: 10px;
@@ -184,9 +191,6 @@ iframe{
         margin: 0;
         text-align: center;
         padding-left: 100px;
-    }
-    .info li{
-        text-align: center;
     }
     .info a:hover{
        background-color:  rgb(140, 141, 233);
