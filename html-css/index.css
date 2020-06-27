@@ -161,10 +161,14 @@ iframe{
     }
     main{
         display: flex;
-        flex-direction: column;
-        margin: 0;
         flex-flow: column-reverse;
-        padding: 0;
+        margin:0;
+        padding:0;
+        width:100% ;
+    }
+    .info{
+        margin-top: 10px;
+        height: auto;
     }
     .row p{
         font-size: 12px;
