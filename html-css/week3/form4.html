@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form4</title>
+    <link href="form.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <h1 id="logo1">logo</h1>
+        <h1 id="nav">navigation</h1></div>
+        <h2>Sign Up to yourcustomtailor.com </h2>
+    </header>
+
+    <main>
+        <h2>step 4/4 - Payment </h2>
+        <label for="file"> progress:</label><br>
+        <progress id="file" value="4" max="5"> 4 </progress>
+        <p>please fill in your payment data</p>
+        
+              <div class="card">
+               <label for="name">Name on card<input type="text" id="name" name="name"  required>
+               </label> 
+               <label for="type">Card type
+                <select  id="type" name="type" >
+                   <option value="1">credit/debit</option>
+                   <option value="2">paypal</option></select>
+               </label> </div>
+               <div class="number">
+              <label for="cardinfo" >Card number
+              <input type="text" id="cardinfo" name="number" maxlength="16" required>
+              </label> 
+              <label for="fname" >First Name
+              <input type="text" id="fname" name="fname"  required></label>
+               </div>
+               <div class="date">
+              <label for="year" >Expiry year
+              <input type="text" id="year"  maxlength='4' required></label>
+              <label for="month" >Expiry month
+              <input type="text" id="month"  maxlength='2' required></label>
+              </div>
+              <div class="date"> 
+              <label for="cvv" >cvv
+              <input type="text" id="cvv" maxlength="3" required> </label>
+              </div>
+              <button> Next </button>
+            </main>
+        </body>
+     </html>

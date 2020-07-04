@@ -1,0 +1,277 @@
+* {
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body{
+      font-family: sans-serif;
+      padding: 10px;
+      display: block;
+  }
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+#logo1{
+    background-color: rgb(219, 213, 213);
+    border: 1px solid gray;
+    text-align: center;
+    height: 70px;
+    width:140px;
+    font-size: 15px;
+    padding-top: 30px;
+    font-weight: lighter;
+}
+#nav{
+    grid-column: 4/ 4;
+    background-color: rgb(219, 213, 213);
+    border: 1px solid gray;
+    text-align: center;
+    height: 70px;
+    font-size: 15px;
+    padding-top: 30px;
+    font-weight: lighter;
+}
+h2{
+    padding: 10px;
+}
+header p{
+    display: inline-block;
+    padding: 10px;
+    width: 60%;
+}
+label{
+    font-weight: bold;
+}
+progress {
+    margin:20px auto;
+    width: 80%;
+    height:30px;
+    overflow:hidden;
+    border: 1px solid black;
+}
+progress::-webkit-progress-bar {   background-color: rgb(245, 240, 240) !important;}
+progress::-webkit-progress-value {   background-color: rgb(143, 142, 142) !important;}
+input[type=text], select, input[type=email]  {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid #555;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+}
+textarea{
+    height: 150px;
+    width: 40%;
+}
+.description{
+    display: flex;
+    flex-direction: row;
+}
+form, .progres {
+    margin: 20px;
+}
+.billing{
+    line-height: 30px;
+}
+input[type=checkbox]{
+    width: 30px;
+    height: 30px;
+}
+a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+    background-color: rgb(114, 111, 111);
+    height: 75px;
+    width: 150px;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+    font-size: 20px;
+    float: right;
+    
+}
+.hidden-address{
+    display: block;
+
+}
+#shipping:checked ~ .hidden-address{
+    position:absolute;
+    display: none;
+}
+
+/*-----------------------------------------*/
+.radio-toolbar {
+    display: flex;
+    flex-direction: row;
+}
+.radio1{
+    display: inline-block;
+    position: relative;
+    top:0;
+    left:0;
+    padding-left: 30px;
+    user-select: none;
+
+}
+input[type=radio]{
+    display: none;
+    
+}
+.radio1 .box{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 2px solid rgb(180, 175, 175);
+}
+.radio1:hover .box{
+    background-color: rgb(95, 95, 114);
+}
+.radio1 input[type=radio]:checked+ .box{
+    background-color: white;
+}
+.radio1 input[type=radio]:checked+ .box:after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid grey;
+    background-color: rgb(83, 81, 81);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/*-----------------------------------------------------*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 30px;
+    margin: 30px;
+    
+}
+.items label{
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 20px;   
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+    width: 40%;
+    text-align: center;
+}
+/*-------------------------------------------------*/
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.date input{
+    width: 7%;
+}
+button {
+    display: block;
+    text-decoration: none;
+    background-color: rgb(114, 111, 111);
+    height: 75px;
+    width: 150px;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    float: right;
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    body{
+        width: 100%;
+        display: block;
+        
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+    }
+    #nav, #logo1{
+        background-color: rgb(219, 213, 213);
+        border: 1px solid gray;
+        text-align: center;
+        height: 70px;
+        width:140px;
+        font-size: 15px;
+        padding: 30px;
+        font-weight: lighter;
+        margin: 40px;
+    }
+     header p{
+        display: inline-block;
+        padding: 10px;
+        width: 90%;
+    }
+    progress{
+        margin: 10px;
+    }
+
+    input[type=text], select, input[type=email]  {
+        width: 55%;
+        padding: 20px;
+        display: block;
+        border: 1px solid #555;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+    .description{
+        display: block;
+        width: 90%;
+    }
+    textarea{
+        height: 100px;
+        width: 70%;
+    }
+    input[type=checkbox]{
+        width: 30px;
+        height: 30px;
+    }
+    a{
+        text-decoration: none;
+        display: block;
+        text-decoration: none;
+        background-color: rgb(114, 111, 111);
+        height: 30px;
+        width: 100px;
+        border: 2px solid black;
+        color: white; 
+        padding-bottom: 40px;
+        
+    }
+    .hidden-address{
+        display: block;
+    
+    }
+    #shipping:checked ~ .hidden-address{
+        position:absolute;
+        display: none;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr; 
+        width: 70%;
+    }
+    .grid img{
+        height: 150px;
+        width: 150px;
+    }
+}
+
