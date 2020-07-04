@@ -207,7 +207,7 @@ button {
     }
     .logo{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     #nav, #logo1{
         background-color: rgb(219, 213, 213);
