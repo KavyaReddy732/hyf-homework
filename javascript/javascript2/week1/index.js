@@ -4,7 +4,7 @@ function shortWord(danishWords)
     let shortest = danishWords[0];
     for(let i=0; i<danishWords.length; i++)
     {   
-        if(danishWords[i].length < shortest.length)
+        if(typeof(shortest=="string") && danishWords[i].length < shortest.length)
         {
            shortest = danishWords[i];
         }
