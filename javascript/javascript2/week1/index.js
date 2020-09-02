@@ -1,14 +1,15 @@
 const danishWords = ['bil', 'plante', 'kaffe', 'bog', 'ø', 'planetarium'];
 function shortWord(danishWords) 
 {
-    let shortest = " ";
+    let shortest = danishWords[0];
     for(let i=0; i<danishWords.length; i++)
     {   
-        if(typeof(danishWords[i] === "string") && danishWords[i].length <= shortest.length)
+        if(danishWords[i].length < shortest.length)
         {
-            return danishWords[i];
+           shortest = danishWords[i];
         }
     }
+    return shortest;
 }
 console.log(shortWord(danishWords));
 ////////////////////////////////////
