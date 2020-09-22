@@ -48,7 +48,7 @@ Can you make sure the search is case insensitive?*/
 /*7.Create an array of movies where a word in the title is duplicated. Fx "Star Wars: The Clone Wars" the word Wars is duplicated. Here are some madeup examples of movies with duplicated words in the title: "The three men and the pistol", "Chase three - The final chase" */
 
 let duplicateWord = movies.filter((element) => element.title.match(/\b(\w+)\b.*\b\1\b/g) !== null)
-    .map((element)=>element.title);
+                    //.map((element)=>element.title);
     console.log(duplicateWord)
 
 /*8.Calculate the average rating of all the movies using reduce. Optional */
