@@ -1,0 +1,19 @@
+{
+    "personaldetais":{
+        "first-name":"kavya",
+        "last-name":"konuganti",
+        "email":"kavyareddy.732@gmail.com",
+        "phone":"91xxxxxx"
+    },
+
+    "address":{
+         "street":"vaerbrovej",
+         "city":"bagsvaerd",
+         "postal code":"2880"
+    },
+    "other-details":{
+        "languages":["telugu","english"],
+        "native":"India",
+        "intersts":["new Technologies","mobiles","cooking"]
+    }
+}
