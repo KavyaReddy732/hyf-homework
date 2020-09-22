@@ -50,7 +50,7 @@ console.log(weatherReport);
 //Student manager
 
 
-Const class07Students = [];
+let class07Students = [];
 function addStudentToClass(studentName){
         if(class07Students.length < 6){
          
