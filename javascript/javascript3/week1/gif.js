@@ -10,7 +10,7 @@ const gifSearcher = ()=>{
             //console.log(element.images.downsized.url)
          const img = document.createElement("img")
          img.src = element.images.downsized.url;
-         const div = document.querySelector("div")
+         const div = document.querySelector(".image")
          div.appendChild(img)
     });
     })

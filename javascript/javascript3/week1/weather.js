@@ -1,16 +1,3 @@
-//const body = document.querySelector("body")
-// fetch('https://cat-fact.herokuapp.com/facts')
-//   .then(response => response.json())
-//   .then(facts => {
-//      console.log(facts.all)
-//     facts.all.forEach(element => {
-//       const div = document.createElement("div")
-//       div.innerHTML = element.text;
-//       body.append(div)
-//     })
-//   })
-
-
 ////WEATHER REOPRT/////
 const body = document.querySelector("body")
 const cityName = document.querySelector("input")
@@ -38,7 +25,6 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid
     });
     
     const windSpeed = data.wind.speed;
-      //console.log(windSpeed)
       document.getElementById("windspeed").innerHTML = "Speed :" + windSpeed + "m/s";
 
     const cloudy = data.clouds.all;
@@ -59,7 +45,6 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid
        })
 
   })}
-  button.addEventListener("click",weather)
   navigator.geolocation.getCurrentPosition((position)=>{
     const lat  = position.coords.latitude;
     const lon = position.coords.longitude;
