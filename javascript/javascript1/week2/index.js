@@ -3,8 +3,8 @@ function getFullName(firstName, surName, userFormlName) {
     return userFormlName ? `Lord ${fullName}`: fullName;
 }
 
-const fullName1 = getFullName('k' , 'k', true);
-const fullName2 = getFullName( 'i' ,'j', false);
+const fullName1 = getFullName('kavya' , 'Reddy', true);
+const fullName2 = getFullName( 'Kavya' ,'Konuganti', false);
 //getFullName();
 console.log(fullName1);
 console.log(fullName2);
@@ -50,7 +50,7 @@ console.log(weatherReport);
 //Student manager
 
 
-let class07Students = [];
+Const class07Students = [];
 function addStudentToClass(studentName){
         if(class07Students.length < 6){
          
@@ -74,15 +74,15 @@ function addStudentToClass(studentName){
         }
         
     }
-    addStudentToClass(" a ");
-    addStudentToClass(" b ");
+    addStudentToClass(" sruthi ");
+    addStudentToClass(" Karo ");
     addStudentToClass("  ");
-    addStudentToClass(" c ");
-    addStudentToClass(" c ");
-    addStudentToClass(" d ");
-    addStudentToClass(" e ");
-    addStudentToClass(" f ");
-    addStudentToClass(" g ");
+    addStudentToClass(" Ember ");
+    addStudentToClass(" Queen ");
+    addStudentToClass(" Valentina ");
+    addStudentToClass(" Kamal ");
+    addStudentToClass(" Kavya ");
+    addStudentToClass(" Ali ");
     console.log(class07Students);
 
     function getNumberOfStudents() {
