@@ -41,10 +41,9 @@ planetLogFunction(saturnLogger)
 //Create a button with the text called "Log location".
 let findMe = ()=>{
     navigator.geolocation.getCurrentPosition(position=>{
-   const latitude  = position.coords.latitude;
-   const longitude = position.coords.longitude;
-   document.getElementById("latitude").innerHTML = `Latitude: ${latitude}`;
-   document.getElementById("longitude").innerHTML = `Longitude: ${longitude}`;
+    const {latitude, longitude} = position.cords
+    document.getElementById("latitude").innerHTML = `Latitude: ${latitude}`;
+    document.getElementById("longitude").innerHTML = `Longitude: ${longitude}`;
  })
 };
  document.getElementById('location').addEventListener('click', findMe);
@@ -66,9 +65,9 @@ runAfterDelay(6, function(){
 });
 //Create a function called jokeCreator that has three parameters: shouldTellFunnyJoke
 
-function jokeCreator(shouldTellFunnyJoke,logFunnyJoke,logBadJoke)
+function jokeCreator(shouldTellFunnyJoke = true,logFunnyJoke,logBadJoke)
 {
-   shouldTellFunnyJoke == true;
+   //shouldTellFunnyJoke == true;
     if(shouldTellFunnyJoke){
         logFunnyJoke(shouldTellFunnyJoke);
     }
@@ -108,6 +107,7 @@ const object = {
    key1 : fun(),
    key2 : fun2()
 }
+console.log(fun2())
 
 
  
