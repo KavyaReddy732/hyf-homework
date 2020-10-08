@@ -1,15 +1,15 @@
 // Movies API//
-async function movie() {
+async function movieToLog() {
         const movies = await fetch(
             "https://gist.githubusercontent.com/pankaj28843/08f397fcea7c760a99206bcb0ae8d0a4/raw/02d8bc9ec9a73e463b13c44df77a87255def5ab9/movies.json"
         );
 
     const moviesArray = await movies.json()
     const badMovies=moviesArray.filter(element => element.rating < 6 && element.year > 2000)
-    .map(element => element);
+    //.map(element => element);
     console.log(badMovies)
 }
-movie()
+movieToLog()
 
 
 
@@ -46,7 +46,7 @@ setTimeoutPromise(3)
 
 ///GeoLocation////
 function getCurrentLocation(){
-    let geoLocation = new Promise((resolve, reject) =>{
+    const geoLocation = new Promise((resolve, reject) =>{
         navigator.geolocation.getCurrentPosition(
             position=>{resolve (position.coords)}
         )
@@ -82,7 +82,7 @@ promiseThen()
 async function asyncAwait(){
     const response = await fetch('https://randomfox.ca/floof/');
     const data = await response.json()
-    let promise = await new Promise((resolve) => {
+    const promise = await new Promise((resolve) => {
                     setTimeout(() => resolve(data), 3000);
                 })
     console.log(promise)
