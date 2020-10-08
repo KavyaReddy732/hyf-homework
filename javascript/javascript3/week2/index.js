@@ -6,7 +6,6 @@ async function movieToLog() {
 
     const moviesArray = await movies.json()
     const badMovies=moviesArray.filter(element => element.rating < 6 && element.year > 2000)
-    //.map(element => element);
     console.log(badMovies)
 }
 movieToLog()
