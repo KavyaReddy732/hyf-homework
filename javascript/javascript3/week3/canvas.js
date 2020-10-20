@@ -1,9 +1,10 @@
 let canvas = document.getElementById('myCanvas');
 let ctx = canvas.getContext('2d'); 
 const randomColor = Math.floor(Math.random()*16777215).toString(16);
-function getRandomColor() {
-    function r() { return Math.floor(Math.random() * 255) }
-    return 'rgb(' + r() + "," + r() + "," + r() + ')';
+function randomColor()
+{   
+    color='rgb('+Math.round(Math.random()*255)+','+Math.round(Math.random()*255)+','+Math.round(Math.random()*255)+')';
+    return color;
 }
 class Circle {
     constructor(startAngle, endAngle){
@@ -24,13 +25,10 @@ class Circle {
 }
 const c1 = new Circle( 0, 2 * Math.PI );
 const c2 = new Circle(0,2 * Math.PI)
-// c1.draw();
-// c2.draw();
 
 setInterval(() => {
     new Circle(0,2 * Math.PI).draw()
 }, 100);
-
 // canvas.addEventListener("mousemove",()=>{
 //     setInterval(() => {
 //     new Circle(0,2 * Math.PI).draw()
