@@ -65,7 +65,7 @@ export function Todo(){
 
   const updateTodo = (index)=>{
     const list = [...todos];
-    list[index].isDone = true;
+    list[index].isDone != list[index].isDone;
     console.log(list)
     setTodos(list)
   }
