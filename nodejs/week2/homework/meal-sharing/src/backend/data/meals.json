@@ -1,0 +1,26 @@
+[
+    {
+        "id" : 1,
+        "title" : "Indian food in the summer",
+        "maxNumberOfGuests" : 5,
+        "description" : "A nice night out eating delicious indian food",
+        "createdAt" : "2019/12/7 14:34",
+        "price" : 67
+    },
+    {
+        "id" : 2,
+        "title" : "Italian",
+        "maxNumberOfGuests" : 2,
+        "description" : "italian pasta",
+        "createdAt" : "2020/11/9 13:34",
+        "price" : 40
+    },
+    {
+        "id" : 3,
+        "title" : "Indian spice",
+        "maxNumberOfGuests" : 10,
+        "description" : "authenic indian food",
+        "createdAt" : "2020/09/11 20:00",
+        "price" : 100
+    }
+]
