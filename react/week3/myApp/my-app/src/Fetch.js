@@ -10,12 +10,11 @@ export function Fetch(){
       (async () => {
         const result = await fetch('https://gist.githubusercontent.com/benna100/391eee7a119b50bd2c5960ab51622532/raw')
         .then(res =>res.json());
-        console.log(result)
         setState(result);
       })();
     }, []);
 
-    const updateOnClick =(index)=>{
+    const updateToDO =(index)=>{
       const list = [...state];
       console.log(list)
       console.log(index)
@@ -50,7 +49,7 @@ export function Fetch(){
             <span key ={index} onChange={()=>updateInput(index)} /> 
             <span className = {item.onCheck ? "strikethrough" : "none"}>{item.description} | {item.deadline}</span>
             <input key={index} type="checkbox" onChange={()=>checkTodo(index)}/>
-            <button onClick={()=>updateOnClick(index)} >Edit</button>
+            <button onClick={()=>updateToDO(index)} >Edit</button>
             </>
              ): (<span className="none">
              <input key ={index} onChange={(e)=>updateInput(index,e.target.value)} value={item.description} />
